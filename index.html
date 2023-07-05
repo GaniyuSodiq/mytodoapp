@@ -3,25 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <title>Todo App</title>
 </head>
 <body>
-    <header>
-        <h1>Todo List Application</h1>
+    <header class="column">
+        <h1 class="centered">Todo List Application</h1>
         <h2>How does it work?</h2>
-        <p>This app will help you to keep track of tasks
-         you want to do and you can delte each item after completing the task
+        <p>This app will help you keep track of tasks
+         you want to do and you can delete each task after completion.
         </p>
     </header>
     
-    <div id="input-todo-section">
+    <div id="input-todo-section" class="column">
         <input type="text" id="new-todo-input" />
         <button id="add-todo-btn">Add Todo</button>
     </div>
     
-    <div id="todos">
+    <div id="todos" class="column">
         <!-- GENERATE DYNAMICALLY -->
     </div>
 </body>
