@@ -6,12 +6,6 @@ function createTodo(){
         removeButton : document.createElement('button')
     }
 
-
-    // 
-
-    // let onpageInput = document.getElementById('new-todo-input').value
-    // console.log(onpageInput) 
-
     todos.removeButton.innerText = 'Remove Todo'
 
     todos.container.appendChild(todos.todoInput)
@@ -26,6 +20,7 @@ function main(){
 }
 
 const todoButton = document.getElementById('add-todo-btn')
+
 todoButton.addEventListener('click', () => {
     let onpageInput = document.getElementById('new-todo-input').value
     console.log(onpageInput) 
