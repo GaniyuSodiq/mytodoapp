@@ -35,3 +35,8 @@ button, input{
     padding: 5px;
 }
 
+@media only screen and (max-width: 800px){
+    .column{
+        margin: 0 10vw;
+    }
+}
