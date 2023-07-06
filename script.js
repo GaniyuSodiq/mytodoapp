@@ -1,5 +1,3 @@
-
-
 function createTodo(){
     const todos = {
         container : document.createElement('div'),
@@ -15,26 +13,20 @@ function createTodo(){
         todos.container.remove()
     })
 
-
+    todos.container.classList.add('todos-style')
 
     todos.container.appendChild(todos.todoInput)
     todos.container.appendChild(todos.removeButton)
 
-
-
-    return todos.container
-}
-
-function main(){
     const todosBox = document.getElementById('todos')
-    todosBox.appendChild(createTodo())
+    todosBox.appendChild(todos.container)
 
+    return todosBox
 }
 
 const todoButton = document.getElementById('add-todo-btn')
-
 todoButton.addEventListener('click', () => {     
-    main()
+    createTodo()
 })
 
 

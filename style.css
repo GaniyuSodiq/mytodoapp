@@ -4,12 +4,34 @@
     color: rgb(18, 18, 18);
 }
 
+button, input{
+    font-family: 'Concert One', cursive;
+    font-size: .9em;
+    color: rgb(18, 18, 18);
+}
+
+
 .column{
     display: flex;
     flex-direction: column;
     margin: 0 30vw;
+    
+}
+
+.todos-style{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+    background-color: rgb(106, 156, 106);
+    padding: 5px;
 }
 
 .centered{
     text-align: center;
 }
+
+#input-todo-section{
+    background-color: orange;
+    padding: 5px;
+}
+
